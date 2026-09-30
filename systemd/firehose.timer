@@ -1,0 +1,10 @@
+[Unit]
+Description=Ξεκινά το firehose.service ακριβώς στις 00:00:00 της 20/09/2026
+
+[Timer]
+OnCalendar=2026-09-20 00:00:00
+Persistent=false
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Bluesky Firehose Real-Time Monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/firehose_rt
+ExecStart=/home/pi/firehose_rt/firehose_monitor 86400
+User=pi
+Restart=no
+StandardOutput=append:/home/pi/firehose_rt/run.log
+StandardError=append:/home/pi/firehose_rt/run.log
+
+[Install]
+WantedBy=multi-user.target

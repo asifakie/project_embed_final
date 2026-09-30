@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+*.o
+*.out
+firehose_rt
+
+# Logs που ΔΕΝ ανεβαίνουν
+metrics_log_24h_clean.txt
+metrics_log_FULL_backup_*.txt
+reconnect_log.txt
+run.log
+*.log.bak
+
+# System
+.DS_Store
+*.swp
+*~
